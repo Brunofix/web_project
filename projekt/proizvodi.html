@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Komponente</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8; 
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #003d40;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        li {
+            display: inline;
+        }
+        button {
+            background-color: #00796b; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #004d40; 
+            transform: translateY(-2px);
+        }
+        a {
+            text-decoration: none;
+        }
+        .back-to-home {
+            margin: 20px;
+        }
+        .back-to-home button {
+            background-color: #004d40; 
+            padding: 15px 30px;
+            font-size: 1.5em;
+            margin-left: 20px; 
+        }
+        .back-to-home button:hover {
+            background-color: #003d40;
+        }
+    </style>
+</head>
+<body>
+    <h1>PC Komponente</h1>
+
+    <div class="back-to-home">
+        <a href="pocetna_stranica.php"><button>Pocetna stranica</button></a>
+    </div>
+
+    <ul>
+        <li><a href="cpu.php"><button>CPU</button></a></li>
+        <li><a href="gpu.php"><button>GPU</button></a></li>
+        <li><a href="ram.php"><button>RAM</button></a></li>
+        <li><a href="ssd.php"><button>Pohrana</button></a></li>
+        <li><a href="monitori.php"><button>Monitori</button></a></li>
+        <li><a href="psu.php"><button>Napajanja</button></a></li>
+    </ul>
+</body>
+</html>

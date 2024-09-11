@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+            font-size: 18px;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-details {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .contact-image {
+            width: 40%;
+            text-align: center;
+        }
+
+        .contact-image img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .contact-form {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form input[type="text"], 
+        .contact-form input[type="email"], 
+        .contact-form input[type="tel"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #028a57;
+        }
+
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+            }
+
+            .contact-details, .contact-image {
+                width: 100%;
+                padding: 0;
+            }
+
+            .contact-image {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Kontakt informacije</h1>
+        
+        <div class="contact-info">
+            <div class="contact-details">
+                <h2>Adresa</h2>
+                <p>Trg bana Josipa Šokčevića 1, Vinkovci</p>
+
+                <h2>Email</h2>
+                <p>webshop@bruno.com</p>
+
+                <h2>Telefon</h2>
+                <p>+385-97-654-258</p>
+            </div>
+            
+            <div class="contact-image">
+                <img src="images/customer-service-icon-png-favpng-zNxferEMTniqzgidG0Wnp2gBJ.jpg" alt="Korisnička služba">
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form method="post" action="submit_contact.php">
+                <div class="form-group">
+                    <label for="ime">Ime:</label>
+                    <input type="text" name="ime" id="ime" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefon">Telefon:</label>
+                    <input type="text" name="telefon" id="telefon">
+                </div>
+                
+                <div class="form-group">
+                    <label for="poruka">Poruka:</label>
+                    <textarea name="poruka" id="poruka" required></textarea>
+                </div>
+                
+                <input type="submit" value="Pošalji">
+            </form>
+        </div>
+</body>
+</html>

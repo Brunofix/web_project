@@ -1,0 +1,5 @@
+Ime: Bruno
+Email: bruno@gmail.com
+Telefon: 02565861
+Poruka: ja sam ja
+------------------
